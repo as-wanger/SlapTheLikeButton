@@ -42,7 +42,7 @@ def test_invalid_slap():
         slap_many(LikeState.empty, 'x')
 
 
-# fixture
+# pytest.fixture
 @pytest.mark.xfail
 def test_db_slap(db_conn):
     db_conn.read_slaps()
